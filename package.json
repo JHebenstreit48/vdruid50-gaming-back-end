@@ -1,0 +1,26 @@
+{
+  "name": "vdruid50-gaming-back-end",
+  "version": "1.0.0",
+  "description": "Firebase data for VDruid50 Gaming",
+  "main": "dist/index.js",
+  "scripts": {
+    "ping:firebase": "ts-node -r tsconfig-paths/register src/scripts/pingFirestore.ts",
+    "seed:game-reviews": "ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importGameReviews.ts",
+    "seed:bio": "ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importBio.ts",
+    "seed:schedule": "ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importSchedule.ts",
+    "ts": "ts-node",
+    "build": "tsc"
+  },
+  "author": "Justin Hebenstreit",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^14.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "dotenv": "^18.0.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}
